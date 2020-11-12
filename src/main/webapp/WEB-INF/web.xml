@@ -6,14 +6,23 @@
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
     <servlet-name>screenshotServlet</servlet-name>
-    <servlet-class>MainServlet</servlet-class>
+    <servlet-class>ImageServlet</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>htmlServlet</servlet-name>
+    <servlet-class>HtmlServlet</servlet-class>
+  </servlet>
   <!-- Note: All <servlet> elements MUST be grouped together and
         placed IN FRONT of the <servlet-mapping> elements -->
 
   <servlet-mapping>
     <servlet-name>screenshotServlet</servlet-name>
     <url-pattern>/screenshot</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>htmlServlet</servlet-name>
+    <url-pattern>/text</url-pattern>
   </servlet-mapping>
 </web-app>
